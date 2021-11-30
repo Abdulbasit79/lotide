@@ -1,7 +1,9 @@
-const eqArrays = require('../eqArrays');
-const assertArraysEqual = require('../assertArraysEqual');
+const head   = require('./head');
+const tail   = require('./tail');
+const middle = require('./middle');
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => PASS
-assertArraysEqual(eqArrays([1, 2, 3], [3, 9, 1]), false); // => PASS
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => PASS
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => FAIL
+module.exports = {
+  head,
+  tail,
+  middle,
+};
