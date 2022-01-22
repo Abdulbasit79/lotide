@@ -11,7 +11,7 @@ const middle = function(arr1) {
     midResult = [arr1[Math.round((arr1.length - 1) / 2)]];
   }
   return midResult;
-};
+};    
 
 module.exports = middle;
 
